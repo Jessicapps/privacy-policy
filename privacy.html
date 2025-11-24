@@ -3,124 +3,79 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-<title>隱私權政策</title>
+<title>隱私權政策｜AI 健康管理師</title>
 <style>
     body { font-family: Arial, sans-serif; line-height: 1.7; margin: 20px; max-width: 900px; }
     h1,h2 { color: #222; }
-    table { border-collapse: collapse; width: 100%; margin: 12px 0; }
-    th, td { border: 1px solid #ddd; padding: 8px; text-align: left; }
-    th { background: #f7f7f7; }
-    small { color: #666; }
+    ul { margin-bottom: 12px; }
 </style>
 </head>
 <body>
 
 <h1>隱私權政策</h1>
-<p>本 App（以下稱「本應用程式」或「我們」）重視您的隱私與資料安全。以下條款說明我們如何收集、使用、儲存與分享資料，並詳述本應用程式中使用之第三方 SDK / 服務的資料處理情形。</p>
+<p>本應用程式重視您的隱私。本政策說明我們如何收集、使用、儲存與分享您的資料。</p>
 
-<h2>1. 我們收集的資料類型</h2>
+<h2>1. 資料收集</h2>
 <ul>
-    <li><strong>個人資料：</strong>電子郵件（若提供）、帳號識別資訊（若註冊）。</li>
-    <li><strong>健康資料（敏感資料）：</strong>身高、體重、體脂率、血壓、血糖、運動與飲食紀錄、喝水量等（僅在您授權並輸入時收集）。</li>
-    <li><strong>影像資料：</strong>您上傳或拍攝的食物照片與營養標示，用於營養分析與辨識。</li>
-    <li><strong>裝置與使用資料：</strong>裝置型號、作業系統、App 使用紀錄、錯誤日誌、IP 位址（僅用於服務運作或錯誤排查）。</li>
-    <li><strong>廣告識別碼：</strong>Advertising ID（僅當您看到廣告時，例如免費版本使用 AdMob）。</li>
+    <li><strong>個人資料：</strong>姓名（選填）、電子郵件地址、年齡、性別（選填）</li>
+    <li><strong>健康與健身資料：</strong>身高、體重、體脂率、血壓、血糖、飲水量、飲食與運動紀錄；透過 Google Fit / Apple Health 同步的健康數據（需授權）</li>
+    <li><strong>使用者提供內容：</strong>食物照片、營養標示照片（用於 AI 分析）</li>
+    <li><strong>裝置與使用資料：</strong>裝置型號、作業系統版本、App 使用紀錄、裝置廣告 ID（僅用於 AdMob 廣告投放）</li>
 </ul>
 
-<h2>2. 資料使用目的</h2>
+<h2>2. 資料使用方式</h2>
 <ul>
-    <li>提供食物影像分析、營養估算與健康追蹤功能。</li>
-    <li>同步健康數據至您授權的服務（例如 Google Fit、Apple Health）。</li>
-    <li>處理訂閱與付款（透過 Google Play 或 Apple In-App Purchase）。</li>
-    <li>改善功能、進行匿名化統計分析與錯誤排查。</li>
-    <li>在您同意下，提供與營養師或其他專業人士共享資料的功能。</li>
+    <li>提供營養分析、健康紀錄與個人化建議</li>
+    <li>同步健康數據至授權服務（Google Fit / Apple Health）</li>
+    <li>處理訂閱與付款（Google Play Billing / Apple IAP）</li>
+    <li>傳送服務相關通知</li>
+    <li>進行匿名統計分析（不含個人資訊）</li>
 </ul>
 
-<h2>3. 影像與 AI 分析（如何處理您上傳的照片與文字）</h2>
-<p>當您上傳食物照片或輸入文字以取得分析建議時，該影像與文字可能會被送至我們或第三方 AI 服務（例如 OpenAI、Google Gemini）處理，以產生辨識結果與建議。送出前，我們會在 UI 明確要求您同意。</p>
+<h2>3. AI 影像與文字分析</h2>
+<p>當您上傳食物照片或輸入文字以取得分析建議時，資料可能會傳送至 AI 服務（OpenAI / Google Gemini）進行分析。送出前會先取得您的同意。資料僅用於提供您要求的服務，不會用於其他用途。</p>
+
+<h2>4. 第三方服務與 SDK</h2>
 <ul>
-    <li>送出資料前會取得您的同意。</li>
-    <li>傳輸採用加密（HTTPS/TLS）處理。</li>
-    <li>影像與辨識結果僅用於提供您要求的服務；除非您同意或法律要求，否則不會用於其他用途（例如公開或訓練模型）。</li>
+    <li><strong>Google Fit API（Android）</strong>：同步授權的健康數據，不存取未授權項目。</li>
+    <li><strong>Apple HealthKit（iOS）</strong>：同步授權健康資料，不與第三方分享。</li>
+    <li><strong>AdMob</strong>：展示廣告，可能使用廣告 ID、裝置資訊、IP 位址與使用互動資料。</li>
+    <li><strong>Google Play Billing / Apple IAP</strong>：處理訂閱與付費，App 不儲存信用卡資料。</li>
+    <li><strong>AI 服務供應商（OpenAI / Google Gemini）</strong>：處理上傳的影像與文字，僅用於分析與回覆。</li>
 </ul>
 
-<h2>4. 第三方 SDK / 服務（你有使用與未使用）</h2>
-<p>下方列出本 App 已整合或可能整合的第三方服務與 SDK，並說明可能收集或傳送的資料。若您想查看第三方的隱私權政策，請到該服務的官方頁面查詢對應條款。</p>
-
-<table>
-  <thead>
-    <tr><th>服務 / SDK</th><th>用途</th><th>可能收集 / 傳送的資料（摘要）</th></tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><strong>Google Fit API</strong></td>
-      <td>同步及讀取使用者授權的健康數據（例如步數、心率、卡路里等）</td>
-      <td>需經您授權後存取的健康數據；資料由 Google 管理並同步至本 App（App 不會在未授權下讀取）。</td>
-    </tr>
-    <tr>
-      <td><strong>Apple HealthKit</strong></td>
-      <td>於 iOS 裝置同步與讀取授權的健康數據</td>
-      <td>需經您授權後存取的健康數據；資料由 Apple 管理並同步至本 App（App 不會在未授權下讀取）。</td>
-    </tr>
-    <tr>
-      <td><strong>AdMob（Google 廣告）</strong></td>
-      <td>展示廣告（僅免費版）</td>
-      <td>可能收集 Advertising ID、裝置資訊、IP 位址與使用互動資料以投放廣告或衡量成效。您可在裝置設定中重置或限制廣告識別碼以限制個人化廣告。</td>
-    </tr>
-    <tr>
-      <td><strong>Google Play Billing / Apple In-App Purchase</strong></td>
-      <td>處理訂閱與應用內購買（付款由商店平台處理）</td>
-      <td>付款交易由 Google Play / Apple 處理；本 App 不儲存您的信用卡或付款詳細資料。交易相關的訂閱狀態或訂單編號可能與 App 帳號關聯以提供服務。</td>
-    </tr>
-    <tr>
-      <td><strong>OpenAI / Google Gemini（AI API）</strong></td>
-      <td>食物影像或文字的辨識與生成建議（食物營養分析、聊天式回覆）</td>
-      <td>您上傳的影像與文字會傳送至所選 AI 供應商以取得辨識/回覆；AI 供應商可能會依其政策處理或暫存資料。送出前我們會請您同意。若您不希望傳送，可停止使用該功能。</td>
-    </tr>
-    <tr>
-      <td><strong>Base44 Platform（後端服務）</strong></td>
-      <td>用於驗證、使用者資料儲存、資料庫與雲端檔案儲存（如您啟用雲端備份）</td>
-      <td>可能儲存使用者帳號、健康紀錄、上傳的影像與備份資料；Base44 會依其服務條款與隱私政策處理該等資料。</td>
-    </tr>
-    <tr>
-      <td><strong>未使用的 SDK（範例）</strong></td>
-      <td>以下 SDK 我們沒有整合於本 App</td>
-      <td>Firebase Analytics / Crashlytics / FCM / Authentication / Storage、Facebook SDK、Adjust / AppsFlyer、Google ML Kit 等（若未來加入，我們將於此頁更新並告知）。</td>
-    </tr>
-  </tbody>
-</table>
-
-<h2>5. 第三方 SDK 自動收集說明</h2>
-<p>某些第三方 SDK（例如廣告或分析 SDK）可能會 <strong>自動</strong> 收集裝置識別碼（如 Advertising ID）、IP 位址、裝置型號與使用行為等，以便執行其功能（例如投放廣告、衡量效果或進行錯誤回報）。即便 SDK 由第三方管理，作為 App 開發者我們需負責揭露這些行為。</p>
-<p>若您希望限制或停止此類收集，請參考下列「使用者控制」區段。</p>
-
-<h2>6. 資料儲存與安全</h2>
+<h2>5. 資料安全</h2>
 <ul>
-    <li>資料傳輸採用加密協定 (HTTPS/TLS) 以保護傳輸中之資訊。</li>
-    <li>我們對敏感資料採取適當的儲存保護措施（例如加密、存取控管）。</li>
-    <li>僅授權人員可存取含個資之伺服端資料，並依必要原則處理資料。</li>
+    <li>HTTPS / TLS 加密傳輸</li>
+    <li>敏感資料加密儲存與存取控管</li>
+    <li>定期安全掃描與更新</li>
 </ul>
 
-<h2>7. 使用者控制與權利</h2>
+<h2>6. 使用者權利</h2>
 <ul>
-    <li><strong>存取 / 更正 / 刪除：</strong>您可要求查看、匯出、更新或刪除我們持有的您的資料（包括雲端備份），請聯繫下方聯絡方式。</li>
-    <li><strong>停止同步：</strong>對於 Google Fit / Apple Health 的同步，您可在該平台取消授權，停止本 App 存取該資料。</li>
-    <li><strong>廣告識別碼與個人化廣告：</strong>您可在裝置的廣告設定中重置或限制 Advertising ID，以關閉個人化廣告。</li>
-    <li><strong>AI 功能同意：</strong>在您首次使用需上傳影像或送出文字至 AI 服務時，本 App 會提示並取得您的同意；您可選擇不使用該功能。</li>
+    <li>存取、匯出、更新或刪除您的資料</li>
+    <li>停止同步 Google Fit / Apple Health</li>
+    <li>重置或限制廣告識別碼以關閉個人化廣告</li>
+    <li>選擇是否使用 AI 功能</li>
 </ul>
+<p>如需行使權利，請聯絡：<strong>heir.hope@gmail.com</strong></p>
 
-<h2>8. 付費與交易</h2>
-<p>本 App 的訂閱或內購由 Google Play 或 Apple App Store 的付費系統處理。我們不會儲存您的完整信用卡資料；若需查看或退款，請透過相對應平台（Google Play / Apple）進行查詢或申請。</p>
+<h2>7. Cookie 與追蹤技術</h2>
+<ul>
+    <li>記錄偏好設定</li>
+    <li>提供個人化體驗</li>
+    <li>分析 App 使用情況</li>
+</ul>
+<p>您可在裝置設定中管理這些功能。</p>
 
-<h2>9. 未成年人</h2>
-<p>本 App 不針對 13 歲以下兒童設計。如發現不慎收集到 13 歲以下兒童的個人資料，將依規定盡速刪除。若您為未成年人，建議在家長或監護人指導下使用。</p>
+<h2>8. 兒童隱私</h2>
+<p>本 App 不適用於 13 歲以下兒童。若誤收集此類資料，將立即刪除。</p>
 
-<h2>10. 隱私政策變更</h2>
-<p>若我們變更隱私政策內容（包括所使用之第三方 SDK 或其資料處理方式），將於此頁更新並在必要時在 App 內或以電子郵件通知您。請定期查看本頁以了解最新內容。</p>
+<h2>9. 隱私政策更新</h2>
+<p>政策可能因功能調整或法規更新而變更。重大變更會在 App 或電子郵件通知您。</p>
 
-<h2>11. 聯絡我們</h2>
-<p>如欲行使資料權利、查詢或提出疑問，請聯絡：</p>
-<p><strong>Email：</strong> heir.hope@gmail.com</p>
+<h2>10. 聯絡方式</h2>
+<p>如有疑問或要行使權利，請聯絡：<strong>heir.hope@gmail.com</strong></p>
 
 </body>
 </html>
